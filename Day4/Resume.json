@@ -1,0 +1,80 @@
+    {
+    "name": "Viswa Prasath A",
+    "contact": {
+      "email": "viswaniti@gmail.com",
+      "phone": "6281535706",
+      "address": "517001 Chittoor, India",
+      "birthdate": "19/07/2001",
+      "linkedin": "www.linkedin.com/in/viswa-prasath-a-b0755b1b5"
+    },
+    "education": [
+      {
+        "institution": "Saveetha Engineering College",
+        "degree": "B.E Electronics and Communication Engineering",
+        "location": "Chennai, India",
+        "duration": "2018 – Present",
+        "cgpa": "8.02"
+      },
+      {
+        "institution": "Sri Chaitanya Jr College",
+        "degree": "Intermediate",
+        "location": "Chittoor, India",
+        "year": 2016,
+        "percentage": "91.4%"
+      },
+      {
+        "institution": "Camford English High School",
+        "degree": "SSC 10th",
+        "location": "Chittoor, India",
+        "percentage": "92%"
+      }
+    ],
+    "languages": ["English", "Tamil", "Telugu", "Kannada", "Hindi"],
+    "profile": "A passionate youngster looking for an opportunity to enhance and explore my knowledge and skills, eager to get into a work environment to put my communication and technical skills to good use for me and the firm's success, always looking forward to facing challenging situations to be a better version of myself.",
+    "soft_skills": [
+      "Effective Communication",
+      "Leadership Skills",
+      "Out of Box Thinking",
+      "Stress Handling",
+      "Time Management"
+    ],
+    "professional_experience": [
+      {
+        "company": "HCL Tech",
+        "position": "Analyst",
+        "location": "Chennai, India",
+        "duration": "2022 – Present",
+        "responsibilities": [
+          "Handling Huddle calls to get updates on all pending incidents and requests.",
+          "Validating all the RCA provided and presenting to the client during meetings.",
+          "Verifying all change requests thoroughly and approving for implementation.",
+          "Auditing changes and incidents every day to ensure everything is done by the book."
+        ]
+      }
+    ],
+    "additional_certificates": [
+      "Business English Certificate",
+      "Preliminary Cambridge English Entry Level Certificate in ESOL International",
+      "AWS Cloud Practitioner",
+      "Microsoft Certified: Azure Fundamentals"
+    ],
+    "programming_languages_tools": [
+      "C",
+      "C++",
+      "Javascript",
+      "ServiceNow"
+    ],
+    "achievements_accolades": [
+      "Awarded the Best Performer Award from DU head within 4 months of joining."
+    ],
+    "references": [
+      {
+        "name": "Dr. K. Indumathi",
+        "designation": "Associate Professor",
+        "institution": "Saveetha Engineering College",
+        "email": "indhumathik@saveetha.ac.in",
+        "phone": "99404 53582"
+      }
+    ],
+    "declaration": "I hereby solemnly declare that the above furnished details are absolute and true to the best of my knowledge and belief."
+  }
