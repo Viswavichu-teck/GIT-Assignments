@@ -1,0 +1,218 @@
+//Data Types
+//1. Number(p) - Integer and Float
+//2. String(p)
+//3. Boolean(p)
+//4. Objects(np) - Arrays and JavaScript Object Notation
+//5. undefined
+//6. NaN
+//7. null
+
+// var  a = 10
+// console.log(typeof(a))
+
+//copy by Value
+// var a = 10
+// var b = a
+// a = 40
+// console.log(a,b)
+
+//copy by refrence(array and json)
+// var a = [1,2,3,4,5]
+// var b = a // copy refrence
+//var b = [...a] if you want to copy by Value
+// a.push(10)
+// a.push(20)
+// console.log(a,b)
+
+// var a = "hai"
+// var b = a
+// a = "hello"
+
+// console.log(a,b)
+
+//Find the sum of all elements in the array
+// var a = [1,5,6,3,4,8,12,11,31]
+// var sum = 0
+// for(let i = 0;i<a.length;i++)
+// {
+//     sum += a[i]
+// }
+// console.log(sum)
+
+
+//Find the sum of odd numbers and even numbers separately in given array
+//I will solve this using for of
+// var a = [1,5,6,3,4,8,12,11,31]
+// var oddSum = 0
+// var evenSum = 0
+
+// for(iterator of array) //iterator will give you the value
+// for(iterator in array) // iterator will give you the index value
+
+// for(e of a)// variable e will give you the value itself
+// {
+//     if(e%2===0)
+//         evenSum+=e
+//     else
+//         oddSum+=e
+// }
+// console.log("Even Sum",evenSum)
+// console.log("Odd Sum",oddSum)
+
+// var a = [1,5,6,3,4,8,12,11,31]
+// for(i in a)//the variable i will give you the index value
+// {
+//     console.log(a[i])
+// }
+
+// a = 10
+// console.log(a)
+
+
+// let obj = {
+//     name:"Khaleel",
+//     email:"khaleel@gmail.com",
+//     mobile:"12345677890",
+//     address:"13, Vivekanandhar Theru, Dubai Main Road, Dubai"
+// }
+
+// for(let e in obj)
+// {
+//     console.log(e,obj[e])
+// }
+
+// (for of) 
+// 1. When you want to Iterate and need only array elements
+// 2. Does not support JOSN(object)
+
+// (for in)
+// 1. Iterate and need array index. 
+// 2. Supports JSON(object)
+
+
+// (for each)
+// 1. works with a callback function for each elemens in an array
+// 2. works only for array and not for JSON
+
+
+// let obj = {
+//     name:"Khaleel",
+//     email:"khaleel@gmail.com",
+//     mobile:["12345677890","987654321"],
+//     address:{
+//         no:"13", 
+//         street:"Vivekanandhar Theru, Dubai Main Road", 
+//         city:"Dubai"
+//     }
+// }
+
+// for(let e of Object.keys(obj))
+// {
+//     if(typeof(obj[e])==="object")
+//     {
+//         for(let i in obj[e])
+//         {
+//             console.log(obj[e][i])
+//         }
+//     }
+//     else
+//     {
+//         console.log(obj[e])
+//     }
+// }
+
+
+// var a = 10
+// var b = "10"
+
+// console.log(a===b)
+
+// var a = 10
+// var sum = 0
+
+//short hand assignment operator
+// sum = sum + a
+// sum+=a
+
+//While loop
+// while(condition)
+// {
+//     body
+// }
+
+//Find the sum of N natural numbers
+// var n = 5;
+// var sum = 0;
+// for(let i = 1; i<=n;i++)
+// {
+//     sum = sum + i
+// }
+// console.log(sum)
+
+// while(n!=0)
+// {
+//     sum = sum + n//15
+//     n--//0
+// }
+// console.log(sum)
+
+// do{
+//     sum = sum + n//5
+//     n--//4
+// }while(n>0)
+// console.log(sum,n)
+
+//Find the sum of all the digits present in the number
+// var n = 345
+// var sum = 0
+//expected out come 3+4+5 = 12
+//slicing logic
+// while(n!=0)
+// {
+//     sum = sum + n%10
+//     n = Math.floor(n/10)
+//     console.log(sum,n)
+// }
+
+// console.log(sum)
+
+// console.log(345%10)
+// console.log(Math.floor(345/10))
+
+
+
+// let users = [{
+//     name:"Khaleel",
+//     email:"khaleel@gmail.com",
+//     mobile:"12345677890",
+//     address:"13, Vivekanandhar Theru, Dubai Main Road, Dubai"
+// },
+// {
+//     name:"Arun",
+//     email:"arun@gmail.com",
+//     mobile:"12345677890",
+//     address:"13, Vivekanandhar Theru, Dubai Main Road, Dubai"
+// },
+// {
+//     name:"Mohideen",
+//     email:"mohideen@gmail.com",
+//     mobile:"9090900900",
+//     address:"13, Vivekanandhar Theru, Dubai Main Road, Dubai"
+// }]
+
+// users.forEach((e)=>{
+//     console.log(`${e.name} is using the email ${e.email}`)
+// })
+
+
+// users.forEach(function (e){
+//     console.log(e.name+" is using the email "+e.email)
+    
+//     console.log(`${e.name} is using the email ${e.email}`)
+// })
+
+// let obj = {
+//     name:"Naga"
+// }
+
+// console.log(obj.name)

@@ -1,0 +1,180 @@
+//function types
+// 1. Normal Function Expression
+// 2. Arrow Function Expression(Anonymous)
+// 3. Immediately Invoked Function Expression(Normal/Arrow)
+
+// let x = "hello hai how are you? welcome to the play area"
+//Hello Hai How Are You? Welcome To The Play Area
+
+
+// function firstUpperCase(word)//parameter
+// {
+//     return word.charAt(0).toUpperCase()+word.slice(1)
+// }
+
+// const firstUpperCase = (word)=>{
+//     return word.charAt(0).toUpperCase()+word.slice(1)
+// }
+
+// Calling a Normal Function Expression/Arrow 
+// let array = x.split(" ")
+// for(let i in array)
+// {
+//     array[i] = firstUpperCase(array[i])//arguments
+// }
+// console.log(array.join(" "))
+
+//Example with ForEach
+// let array = x.split(" ")
+// let output = []
+// array.forEach((e)=>{
+//     output.push(firstUpperCase(e))//arguments
+// })
+// console.log(output.join(" "))
+
+
+//Calling a IIFE
+// let array = x.split(" ")
+// for(let i in array)
+// {
+//     array[i] = (function firstUpperCase(word){
+//         return word.charAt(0).toUpperCase()+word.slice(1)
+//     })(array[i]);
+// }
+
+// console.log(array.join(" "))
+
+// let array = x.split(" ")
+// for(let i in array)
+// {
+//     array[i] = ((word)=>{
+//         return word.charAt(0).toUpperCase()+word.slice(1)
+//     })(array[i]);
+// }
+
+// console.log(array.join(" "))
+
+
+//Class
+
+// class Home{
+//     name = "Nagrajan"
+//     constructor(x)
+//     {
+//         this.budget = x
+//     }
+    
+//     display(){
+//         console.log(`The budget of home is Rs. ${this.budget}`)
+//     }
+// }
+
+// //object
+
+// let home1 = new Home(1000)
+// let home2 = new Home(1000000)
+// console.log(home1.name,home2.name)
+// home1.display()
+// home2.display()
+
+//Real Example is Date Class
+
+// let date = new Date()
+
+// console.log(date)
+// //static function example
+// console.log(Date.now())
+
+// //example for class function
+// console.log(date.toDateString())
+
+
+
+
+// class Home{
+//   	engineer = "Thomas"
+//     static contractor = "Nesamani"
+//     constructor(x)
+//     {
+//         this.budget = x
+//     }
+    
+//     display(){
+//         console.log(`The budget of home is Rs. ${this.budget}`)
+//     }
+
+//   	static displayName(){
+//       console.log("My Name is "+this.contractor)
+// 	}
+// }
+
+//object
+
+// let home1 = new Home(1000)
+// let home2 = new Home(1000000)
+// console.log(home1.engineer)
+// home1.display()
+// home2.display()
+// console.log(Home.contractor)
+// console.log(Home.displayName())
+
+
+// private example
+
+// class Home{
+//   	engineer = "Thomas"
+//     static contractor = "Nesamani"
+//   	#profitMargin = 0.50
+//   	static #processingFee = 0.01
+//     constructor(x)
+//     {
+//         this.budget = x
+//     }
+    
+//     display(){
+//       	let totalExpense = this.budget + this.budget*this.#profitMargin
+//         console.log(`The Total Expense of home is Rs. ${totalExpense}`)
+//     }
+
+//   	static displayName(){
+//       console.log("My Name is "+this.contractor,this.#processingFee)
+// 	}
+// }
+// let home1 = new Home(1000)
+// console.log(home1.profitMargin)
+// Home.displayName()
+
+
+// class Parent {
+// 	constructor()
+//   	{
+// 		this.amount = 1000000
+// 	}
+
+//   	parentAsset()
+//   	{
+//       	return this.amount
+// 	}
+// }
+
+// class Child extends Parent{
+// 	constructor(x)
+//   	{
+//       	super()
+//       	this.asset = x
+// 	}
+
+//   	myAsset()
+//   	{
+//       return this.asset
+// 	}
+  
+//   	totalAsset()
+//   	{
+//       	return this.asset+super.parentAsset()
+// 	}
+// }
+
+// let son = new Child(500000)
+// console.log("My Asset",son.myAsset())
+// console.log("My Total Asset",son.totalAsset())
