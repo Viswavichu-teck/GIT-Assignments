@@ -25,5 +25,5 @@ class UberPrice {
     }
   }
   
-  const uberPrice = new UberPrice("Thiruchendur", "Pudur", 10, "One way", 15);
+  const uberPrice = new UberPrice("Chittoor", "Vellore", 10, "One way", 15);
   uberPrice.displayDetails();
